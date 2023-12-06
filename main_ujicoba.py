@@ -62,7 +62,7 @@ def update_line_chart(sensor_data):
     if sensor_data == "1":
         data.append((current_time, "Kation"))
     elif sensor_data == "0":
-        data.append((current_time, "Aman"))
+        data.append((current_time, "Anion"))
 
     # Proses data waktu untuk sumbu x
     x_time = [entry[0] for entry in data]
