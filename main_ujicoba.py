@@ -49,9 +49,9 @@ def on_message(client, userdata, msg):
 def update_output(sensor_data):
     status = ""
     if sensor_data == "1":
-        status = "Terdeteksi Kation !!!"
+        status = "Kation"
     elif sensor_data == "0":
-        status = "Aman"
+        status = "Anion"
     
     status_container.metric("Status :", status)
 
