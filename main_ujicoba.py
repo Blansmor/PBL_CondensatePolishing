@@ -74,7 +74,7 @@ def update_line_chart(sensor_data):
 
     # Tampilkan grafik garis menggunakan Plotly dalam wadah yang sudah dibuat
     fig = go.Figure(data=go.Scatter(x=x_time, y=y_numeric, mode='lines'))
-    fig.update_yaxes(tickvals=[0, 1], ticktext=["Aman", "Kation"])  # Atur label pada sumbu Y
+    fig.update_yaxes(tickvals=[0, 1], ticktext=["Anion", "Kation"])  # Atur label pada sumbu Y
     chart_container.plotly_chart(fig, use_container_width=True, key='line_chart')
 
     if len(data) > max_data_points:
